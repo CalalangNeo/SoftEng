@@ -13,7 +13,7 @@ if(isset($_SESSION['UserLogin'])){
 include_once("connections/connections.php");
 $con = connect();
 
-$sql = "SELECT * FROM student_list ORDER BY id DESC"; 
+$sql = "SELECT * FROM per_year_database_table.sql ORDER BY id DESC"; 
 $students = $con->query($sql) or die ($con->error);
 $row = $students->fetch_assoc();
 
@@ -24,7 +24,7 @@ $row = $students->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLMUN Student Management System</title>
+    <title>PLMUN Alumni</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         h1 {
