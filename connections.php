@@ -4,8 +4,8 @@ function connect(){
 
     $host = "localhost";
 $username = "root";
-$password = "calalangnea";
-$database = "nea";
+$password = "";
+$database = "per_year_database_table.sql";
 
 $con = new mysqli($host, $username, $password, $database);
 
